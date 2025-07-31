@@ -1,0 +1,238 @@
+/* Fonts & Variáveis Globais */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --cor-fonte: #ffffff;
+    --cor-primaria: #202C59;
+    --cor-hover: #D95D39;
+    --cor-borda: #F0A202;
+    --cor-rodape: #581F18;
+    --cor-barra: #ffffff;
+    --cor-progresso: #D95D39;
+    --fonte-texto: "Winky Rough", sans-serif;
+    --fonte-titulo: "Bebas Neue", sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Body */
+body {
+    background: linear-gradient(to right, #F0A202, #F18805, #D95D39);
+}
+
+/* Header */
+.cabecalho {
+    padding: 2%;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    text-decoration: none;
+    color: #202C59;
+    font-size: 38px;
+    margin: 5% 10%;
+    padding: 5px;
+}
+
+.cabecalho__menu__link:hover {
+    background-color: var(--cor-hover);
+    border-radius: 16px;
+}
+
+/* Currículo */
+.curriculo {
+    padding: 0% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Apresentação */
+.curriculo__apresentacao {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+    background-color: var(--cor-primaria);
+    border-radius: 14px;
+    padding: 5% 5%;
+    color: white;
+}
+
+.curriculo__apresentacao__foto {
+    border: 10px ridge #F0A202;
+    border-radius: 16px;
+    width: 30%;
+    height: 40%;
+}
+
+.curriculo__apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.curriculo__apresentacao__conteudo__titulo {
+    font-size: 40px;
+    font-family: var(--fonte-titulo);
+}
+
+.curriculo__apresentacao__conteudo__subtitulo {
+    font-family: var(--fonte-texto);
+    font-style: italic;
+    color: rgb(190, 189, 189);
+}
+
+.curriculo__apresentacao__conteudo__texto {
+    font-size: 28px;
+    text-align: justify;
+    font-family: var(--fonte-texto);
+}
+
+.curriculo__apresentacao__conteudo__links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.curriculo__apresentacao__conteudo__links__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--cor-fonte);
+}
+
+/* Skills */
+.curriculo__skills__titulo {
+    font-size: 40px;
+    font-family: var(--fonte-titulo);
+    margin-bottom: 1%;
+    text-align: center;
+    color: var(--cor-fonte);
+    background-color: var(--cor-hover);
+    border: 8px solid var(--cor-primaria);
+    width: 20%;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.curriculo__skills {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.curriculo__skills--profissionais {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+    text-align: start;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte);
+    padding: 5%;
+    border-radius: 16px;
+}
+
+.curriculo__skills--profissionais__subtitulo {
+    font-size: 36px;
+    font-family: var(--fonte-texto);
+}
+
+.curriculo__skills--profissionais__skill {
+    font-size: 28px;
+    font-family: var(--fonte-texto);
+}
+
+.curriculo__skills--profissionais__barra {
+    background-color: var(--cor-barra);
+    width: 80%;
+    border: 4px solid var(--cor-borda);
+    margin: 2% 0% 2%;
+}
+
+#html--progresso {
+    background-color: var(--cor-progresso);
+    height: 24px;
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+}
+
+#javascript--progresso {
+    background-color: var(--cor-progresso);
+    height: 24px;
+    width: 40%;
+    text-align: center;
+    font-size: 18px;
+}
+
+#bootstrap--progresso {
+    background-color: var(--cor-progresso);
+    height: 24px;
+    width: 30%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.curriculo__skills--adicionais {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    border-radius: 16px;
+    width: 50%;
+    background-color: var(--cor-primaria);
+}
+
+.curriculo__skills--adicionais__subtitulo {
+    font-size: 36px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-fonte);
+}
+
+.curriculo__skills--adicionais__lista {
+    display: flex;
+    flex-direction: column;
+    color: var(--cor-fonte);
+    font-size: 28px;
+    font-family: var(--fonte-texto);
+    gap: 26px;
+}
+
+/* Footer */
+.rodape {
+    background: var(--cor-rodape);
+    color: var(--cor-fonte);
+    padding: 36px;
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--fonte-titulo);
+}
+
+/* Página 'Sobre Mim' */
+.curriculo__sobremim {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--cor-primaria);
+    border-radius: 16px;
+    padding: 4% 20% 4% 20%;
+    color: var(--cor-fonte);
+    font-size: 28px;
+    text-indent: 5%;
+    text-align: justify;
+    gap: 40px;
+}
+
+.curriculo__sobremim__foto {
+    width: 20%;
+    height: 40%;
+    border-radius: 16px;
+    border: 16px groove var(--cor-borda);
+}
