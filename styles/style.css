@@ -51,19 +51,17 @@ body {
 }
 
 .curriculo {
-   padding: 2%;
-   
-   
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+     
 }
 
 .curriculo__apresentacao {
     background-color: var(--cor-secundaria);
     padding: 10%;
     border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
+    
 }
 
 .curriculo__apresentacao__foto {
@@ -93,6 +91,8 @@ body {
     color: var(--cor-fonte);
     text-align: justify; 
     font-size: 1.5rem; 
+    
+
 
 }
 .curriculo__apresentacao__tabela{
@@ -250,11 +250,7 @@ body {
     :root{
         font-size: 12px;
     }
-    .html,body{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+
      .cabecalho__menu {
         flex-direction: column;
         align-items: center;
