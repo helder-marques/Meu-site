@@ -211,7 +211,7 @@ body {
 .rodape {
     background-color: var(--cor-terciaria);
     padding: 1rem;
-    width: 100%;
+    
     color: var(--cor-fonte);
     font-family: var(--fonte-titulo);
     text-align: center;
@@ -246,15 +246,20 @@ body {
 }
 
 
-@media(max-width:500px){
+@media(max-width:768px){
     :root{
-        font-size: 10px;
+        font-size: 12px;
+    }
+     .cabecalho__menu {
+        flex-direction: column;
+        align-items: center;
     }
     .curriculo__skills{
         flex-direction: column;
         align-items: center;
+        gap: 20%;
     }
-    .curriculo__skills--profissionais{
-        margin-bottom: 10%;
+    .curriculo__skills--profissionais,.curriculo__skills--adicionais{
+        width: 90%;
     }
 }
